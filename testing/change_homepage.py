@@ -17,7 +17,7 @@ os.system('git clone https://github.com/fxrhxn/change_homepage')
 
 
 # Get the current path where the folder is downloaded.
-current_path = os.getcwd() + '/change_homepage/images/main.jpg'
+current_path = os.getcwd() + '/change_homepage/images/bubble_logo.jpg'
 
 # Call the function that gets the images. and turns the background into it. Pass the path of the image.
 background_change(current_path)
