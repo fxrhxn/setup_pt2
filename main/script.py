@@ -67,7 +67,7 @@ def download_repo(repo):
 
 ## Download the motherfucking repos.
 for repo in repo_urls:
-	download_repo(url)
+	download_repo(repo)
 
 
 ################################################################################
