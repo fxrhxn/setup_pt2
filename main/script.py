@@ -100,8 +100,8 @@ def file_editor(path, old_tag, new_tag):
 '''
 
 ## Download the motherfucking repos.
-for repo in repo_urls:
-	download_repo(repo)
+# for repo in repo_urls:
+# 	download_repo(repo)
 
 
 ################################################################################
