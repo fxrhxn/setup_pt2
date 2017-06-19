@@ -1,17 +1,7 @@
-import os
-import subprocess
 import sys
+import fileinput
 
-# Function that sends confirmation questions.
-def confirm_question(question):
-	question = raw_input(question + '(y / n)')
-
-	if (question == 'y' or question == 'yes' or question == 'Y'):
-		return True
-	elif (question == 'n' or question == 'N' or question == 'no'):
-		return False
-	else:
-		return False
-
-
-confirm_question('Testing shit.')
+# replace all occurrences of 'sit' with 'SIT' and insert a line after the 5th
+for i, line in enumerate(fileinput.input('/private/etc/hosts', inplace=1)):
+	sys.stdout.write(line.replace('local.bubble.is', 'localhost'))  # replace 'sit' and write
+	if i == 4: sys.stdout.write('\n')  # write a blank line after the 5th line
